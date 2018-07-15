@@ -5,12 +5,12 @@ module.exports = {
   entry: './index.js',
   output: {
     filename: 'site.js',
-    path: path.resolve(__dirname, 'build')
+    path: path.resolve(__dirname, 'build'),
   },
   module: {
     rules: [{
       test: /\.css$/,
-      use: [ 'style-loader', 'css-loader' ]
+      use: ['style-loader', 'css-loader'],
     }],
   },
 };
