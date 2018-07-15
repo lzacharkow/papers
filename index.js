@@ -1,3 +1,4 @@
-import App from './sketches/01-test';
+// import App from './sketches/test';
+import App from './sketches/spidget-finners';
 
 const paper = new App();
