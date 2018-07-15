@@ -1,9 +1,9 @@
 import Pulp from './Pulp';
 
-class Paper1 extends Pulp {
+class App extends Pulp {
 	draw() {
 		console.log('working');
 	}
 }
 
-export default Paper1;
+export default App;

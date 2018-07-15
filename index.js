@@ -1,3 +1,3 @@
-import App from './sketches/Paper1';
+import App from './sketches/01-test';
 
 const paper = new App();
