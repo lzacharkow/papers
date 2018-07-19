@@ -26,13 +26,13 @@ class App extends Pulp {
 		};
 
 		this.scene.view.onFrame = () => {
-			paths.forEach((path) => {
-				path.segments.forEach((segment, i) => {
-					const x = Math.sin(new Date() / 200 + i) * 0.5;
-					const y = Math.cos(new Date() / 200 + i) * 0.5;
-					segment.point = segment.point.add(new this.scene.Point(x, y));
-				});
-			});
+			// paths.forEach((path) => {
+			// 	path.segments.forEach((segment, i) => {
+			// 		const x = Math.sin(new Date() / 200 + i) * 0.5;
+			// 		const y = Math.cos(new Date() / 200 + i) * 0.5;
+			// 		segment.point = segment.point.add(new this.scene.Point(x, y));
+			// 	});
+			// });
 		};
 	}
 }
