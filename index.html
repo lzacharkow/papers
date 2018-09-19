@@ -16,26 +16,127 @@
 
 			body {
 				overflow: hidden;
+				font-family: Cousine, "Andale Mono";
 			}
 
 			canvas {
-				width: 100%;
+				width: calc(100% - 200px);
 				height: 100%;
+				cursor: grab;
 			}
 
 			.export {
 				position: fixed;
-				right: 10px;
-				bottom: 10px;
+				right: 0;
+				bottom: 0;
+				width: 200px;
 				outline: none;
 				border: none;
-				font-family: "Andale Mono";
+				font-family: Cousine, "Andale Mono";
 				font-weight: 700;
 				font-size: 12px;
-				padding: 6px;
+				padding: 10px 6px;
 				color: white;
-				background-color: #0B487F;
+				background-color: #1566FF;
 				cursor: pointer;
+			}
+
+			.controls {
+				position: fixed;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				width: 200px;
+				padding: 16px;
+				/*background-color: rgba(0,0,0,0.05);*/
+				background-color: white;
+				box-shadow: 0px 6px 16px rgba(0,0,0,0.2);
+				font-size: 12px;
+			}
+
+			.controls button {
+				width: 100%;
+			}
+
+			.readout {
+				margin-top: 14px;
+				margin-bottom: 6px;
+			}
+			.readout:first-child {
+				margin-top: 0;
+			}
+
+			.readout::before {
+				position: relative;
+				display: inline;
+				content: attr(data-name);
+				color: #1566FF;
+				font-weight: bold;
+			}
+
+			/* range styles generated from http://danielstern.ca/range.css/#/ */
+			input[type=range] {
+				-webkit-appearance: none;
+				width: 100%;
+				margin: 0px 0;
+			}
+			input[type=range]:focus {
+				outline: none;
+			}
+			input[type=range]::-webkit-slider-runnable-track {
+				width: 100%;
+				height: 14px;
+				cursor: pointer;
+				background: #d8d8d8;
+			}
+			input[type=range]::-webkit-slider-thumb {
+				height: 14px;
+				width: 14px;
+				background: #1566FF;
+				cursor: pointer;
+				-webkit-appearance: none;
+				margin-top: 0px;
+			}
+			input[type=range]:focus::-webkit-slider-runnable-track {
+				background: #eaeaea;
+			}
+			input[type=range]::-moz-range-track {
+				width: 100%;
+				height: 14px;
+				cursor: pointer;
+				background: #d8d8d8;
+			}
+			input[type=range]::-moz-range-thumb {
+				height: 14px;
+				width: 14px;
+				background: #000000;
+				cursor: pointer;
+			}
+			input[type=range]::-ms-track {
+				width: 100%;
+				height: 14px;
+				cursor: pointer;
+				background: transparent;
+				border-color: transparent;
+				color: transparent;
+			}
+			input[type=range]::-ms-fill-lower {
+				background: #c6c6c6;
+			}
+			input[type=range]::-ms-fill-upper {
+				background: #d8d8d8;
+			}
+			input[type=range]::-ms-thumb {
+				width: 14px;
+				background: #000000;
+				cursor: pointer;
+				height: 14px;
+			}
+			input[type=range]:focus::-ms-fill-lower {
+				background: #d8d8d8;
+			}
+			input[type=range]:focus::-ms-fill-upper {
+				background: #eaeaea;
 			}
 		</style>
 	</head>
